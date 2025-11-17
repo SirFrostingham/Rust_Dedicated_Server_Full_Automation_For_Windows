@@ -30,10 +30,6 @@ if not exist "%CFG_FILE%" (
         echo rcon.port 28016
         echo rcon.password MySecretPassword
         echo rcon.web 1
-        echo server.maxplayers 10
-        echo server.seed 93526673
-        echo server.worldsize 3000
-        echo server.saveinterval 600
 
         echo # === WORLD ===
         echo server.level "Procedural Map"
