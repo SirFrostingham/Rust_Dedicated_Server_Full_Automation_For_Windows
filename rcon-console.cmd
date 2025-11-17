@@ -1,0 +1,1 @@
+call rcon.cmd console

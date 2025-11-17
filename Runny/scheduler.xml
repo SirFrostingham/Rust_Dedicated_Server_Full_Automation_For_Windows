@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+NotTwentyFourHourJob if set to 1, then execute job on the hour instead of on the clock
+startDate           Can be NULL/empty   - example: null, 1/1/2015
+endDate             Can be NULL/empty   - example: null, 1/10/2015
+time                Must be miliarty time format: 00:00:00 - 23:59:59
+day                 1,2,3,4,5,6,7   =   Sun,Mon,Tues,Wed,Thurs,Fri,Sat
+loop                1 or 0  =   On or Off
+command             Executable, script or whatever command to run
+commandParams       command parameters
+comment             note on command -   example: This is a wonderful command that I run every day at 4pm
+-->
+
+<scheduler>
+    <job>
+        <executeontimer>0</executeontimer>
+        <startdate></startdate>
+        <enddate></enddate>
+        <time>04:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>1</loop>
+        <command>c:\A_Rust_Server\rcon.cmd shutdown</command>
+        <commandparams></commandparams>
+        <comment>RUST - shutdown</comment>
+    </job>
+</scheduler>
