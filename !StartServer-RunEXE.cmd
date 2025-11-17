@@ -19,10 +19,10 @@ for %%A in ("%CFG_FILE%") do (
 if not exist "%CFG_FILE%" (
     echo [INFO] Creating server.cfg with default settings...
     > "%CFG_FILE%" (
-        echo server.hostname "MyCoolServer Server - Big Dumn Fun House"
-        echo server.identity "MyCoolServer"
+        echo server.hostname "%IDENTITY% Server - Big Dumn Fun House"
+        echo server.identity "%IDENTITY%"
         echo server.description "A server for the dumn"
-        echo server.url "https://MyCoolServer.com"
+        echo server.url "https://%IDENTITY%.com"
         echo server.password ""
         echo server.secure true
         echo server.port 28015
@@ -101,8 +101,8 @@ echo "Server Starting ... CTRL-C to Shut Down the Server"
 
 cd /d "%SERVER_SETTINGS_PATH%"
 
-start "MyCoolServer" /wait /high /affinity F "%SERVER_SETTINGS_PATH%\RustDedicated.exe" -log -batchmode ^
-  +server.identity "MyCoolServer" ^
+start "%IDENTITY%" /wait /high /affinity F "%SERVER_SETTINGS_PATH%\RustDedicated.exe" -log -batchmode ^
+  +server.identity "%IDENTITY%" ^
   +server.secure true ^
   +server.maxplayers 10 ^
   +server.seed 93526673 ^
@@ -112,7 +112,3 @@ start "MyCoolServer" /wait /high /affinity F "%SERVER_SETTINGS_PATH%\RustDedicat
   +rcon.password MySecretPassword ^
   +rcon.web 1 ^
   +fps.limit 256
-
-
-REM start "MyCoolServer" /min /wait /high /affinity F "%SERVER_PATH%\live\RustDedicated.exe" "Rust_Server" -Log -PORT=17777 -QueryPort=28015 -MULTIHOME=192.168.1.52 -SteamServerName="MyCoolServer.com" -AdminPassword=sniffthis1 -MaxPlayers=8 -ShutdownIfNotJoinedFor=300 -AllowNonAdminsToLaunchProspects=false -AllowNonAdminsToDeleteProspects=false -LoadProspect="Moosemilker party" -ResumeProspect=true -JoinPassword=fun
-
