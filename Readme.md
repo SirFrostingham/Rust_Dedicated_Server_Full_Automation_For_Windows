@@ -37,6 +37,7 @@
     - If connecting to the server for the first time, the server will likely not be listed yet...
     - To connect: Press F1 (for console) -> `client.connect [your_ip_address]:28015`
         - NOTE: If you have a DNS, you can use that: `client.connect [your_dns_name]:28015`
+            - You can also connect to a server on your local network like this: `client.connect 192.168.x.x:28015` (adjust to your ip address specs)
     - Once in-game... If you did step #4 (add yourself as admin): Press F1 (for console) -> `cp`
         - `cp` command loads the admin interface
         - From here you can enable plugins/mods and HIGHLY configure your server.
