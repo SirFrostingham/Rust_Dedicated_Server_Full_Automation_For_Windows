@@ -4,7 +4,7 @@ setlocal ENABLEDELAYEDEXPANSION
 
        :: DEFINE the following variables where applicable to your install
 
-SET STEAMLOGIN=areed99
+SET STEAMLOGIN=YourSteamUsername_But_Not_Needed
 SET AppId=258550
 
 SET GamePath=C:\A_Rust_Server\live
