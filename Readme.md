@@ -49,8 +49,12 @@
 ## Customization
 
 - Review [!StartServer-RunEXE.cmd](Rust_Dedicated_Server_Full_Automation_For_Windows/!StartServer-RunEXE.cmd) and adjust starter server settings accordingly.
+
+    - Paths! Be sure these paths are correct (if not, find & replace across all files): 
+        - Server: SERVER_PATH=`C:\A_Rust_Server`
+        - Steam: STEAMPATH=`C:\Program Files (x86)\Steam`
     
-    - If you already have a server going, assign your server's identity to the value - ex: `set "IDENTITY=MyCoolServer"`
+    - Server name: IDENTITY=`MyCoolServer`
 
     - NOTE these IMPORTANT things to keep in-line with whatever instance you may already have...
 
