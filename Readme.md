@@ -60,8 +60,8 @@
 
         - Do a FIND & REPLACE with the settings you want...
 
-            `server.seed 93526673`
-            `server.worldsize 3000`
+            - `server.seed 93526673`
+            - `server.worldsize 3000`
 
 - CRITICAL: If coming from an already existing world, make sure the "[your_server_name]" from path .\live\config\server\[your_server_name]\cfg\server.cfg matches exactly what's defined for `IDENTITY` in [!StartServer-RunEXE.cmd](Rust_Dedicated_Server_Full_Automation_For_Windows/!StartServer-RunEXE.cmd
 
