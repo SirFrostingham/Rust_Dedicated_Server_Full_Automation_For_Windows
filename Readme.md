@@ -5,10 +5,8 @@
     [!start_dedicated.cmd](Rust_Dedicated_Server_Full_Automation_For_Windows/!start_dedicated.cmd)
 
     NOTE: The server will post this to the game server log when the server is done loading:
-        ```
-        Server startup complete
-        SteamServer Connected
-        ```
+        `Server startup complete`
+        `SteamServer Connected`
 
 2. Run this to automate steam game version checks, where if there's an update
     and there are 0 players online, the server automatically restarts:
@@ -67,3 +65,4 @@
 - CRITICAL: If coming from an already existing world, make sure the "[your_server_name]" from path .\live\config\server\[your_server_name]\cfg\server.cfg matches exactly what's defined for `IDENTITY` in [!StartServer-RunEXE.cmd](Rust_Dedicated_Server_Full_Automation_For_Windows/!StartServer-RunEXE.cmd
 
 That should cover most things... There may be more gotchas, but hey... this is FREE game server automation sent out for your enjoyment. So yeah... Enjoy! ;-)
+
